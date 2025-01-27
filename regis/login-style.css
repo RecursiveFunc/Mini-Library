@@ -1,0 +1,112 @@
+/* Reset styling untuk margin dan padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Gunakan gambar sebagai latar belakang */
+body {
+    background-image: url('../images/bg-login.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Pastikan gambar menutupi seluruh layar */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-attachment: fixed; /* Gambar akan tetap saat halaman digulir */
+}
+
+/* Style untuk memastikan kontainer form ada di tengah halaman */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi penuh halaman */
+    background-color: rgba(255, 255, 255, 0.8); /* Sedikit transparansi untuk kontras */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style untuk judul form */
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Style form */
+form {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* Lebar maksimal */
+}
+
+.form-floating {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: #495057;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk teks kecil di antara password dan tombol */
+.small-text h5 {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px; /* Beri jarak antara teks dan tombol */
+}
+
+.small-text h5 a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.small-text h5 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    cursor: pointer;
+}

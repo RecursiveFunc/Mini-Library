@@ -1,0 +1,72 @@
+/* Style untuk header */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo di header */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Warna aktif pada menu */
+.nav-link.active {
+    color: #007bff !important;
+    font-weight: bold;
+}
+
+/* Form pencarian */
+form.d-flex input[type="search"] {
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+}
+
+/* Tombol pencarian */
+form.d-flex .btn-outline-success {
+    border-radius: 20px;
+}
+
+/* Konten utama */
+.container h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Dropdown menu - responsif */
+#dropdownResult {
+    position: absolute;
+    top: 100%; /* Tepat di bawah elemen pencarian */
+    left: 0;
+    width: 100%; /* Sesuaikan lebar dropdown dengan input pencarian */
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown item style */
+.dropdown-item {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Untuk layar besar (agar dropdown tetap rapi) */
+@media (min-width: 992px) {
+    #dropdownResult {
+        left: 68%;
+        right: 0;
+        width: auto; /* Opsi: Ubah jika perlu */
+    }
+}
+

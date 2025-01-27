@@ -1,0 +1,37 @@
+/* Style untuk header */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo di header */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Warna aktif pada menu */
+.nav-link.active {
+    color: #007bff !important;
+    font-weight: bold;
+}
+
+/* Form pencarian */
+form.d-flex input[type="search"] {
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+}
+
+/* Tombol pencarian */
+form.d-flex .btn-outline-success {
+    border-radius: 20px;
+}
+
+/* Konten utama */
+.container h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #555;
+}
