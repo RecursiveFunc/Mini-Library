@@ -18,16 +18,16 @@ if (isset($_GET['query'])) {
         LEFT JOIN 
             genres AS g ON bg.genre_id = g.id
         WHERE 
-            b.judul LIKE ?
+            b.judul LIKE ? OR b.penulis LIKE ?
         GROUP BY 
             b.id
     ";
 
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $query);
+    $stmt->bind_param("ss", $query, $query);
     $stmt->execute();
     $result = $stmt->get_result();
-
+    
     $books = [];
     while ($row = $result->fetch_assoc()) {
         $books[] = $row;

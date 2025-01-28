@@ -20,10 +20,6 @@
                     <a class="nav-link" href="<?php echo BASE_URL . 'addbook/addbook.php'; ?>"><i class="bi bi-plus-circle"></i> Tambah Buku</a>
                 </li>
             </ul>
-            <form class="d-flex" action="<?php echo BASE_URL . 'search.php'; ?>" method="GET">
-                <input class="form-control me-2" type="search" placeholder="Cari buku..." name="query" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Cari</button>
-            </form>
             <a href="<?php echo BASE_URL . 'regis/logout.php'; ?>" class="btn btn-danger ms-3">Log Out</a>
         </div>
     </div>
